@@ -1,0 +1,14 @@
+---
+import '@/styles/global.scss'
+import Meta from '@/components/Metadata.astro'
+
+const { title, description } = Astro.props
+---
+
+<!doctype html>
+<html lang="en">
+  <Meta title={title} description={description} />
+  <body>
+    <slot />
+  </body>
+</html>
