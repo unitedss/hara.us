@@ -1,4 +1,12 @@
 :root {
+	--cyan: hsla(180, 90%, 60%, 1);
+	--green: hsla(142, 90%, 60%, 1);
+	--orange: hsla(25, 90%, 60%, 1);
+	--pink: hsla(335, 90%, 60%, 1);
+	--purple: hsla(257, 90%, 60%, 1);
+	--red: hsla(0, 90%, 60%, 1);
+	--yellow: hsla(62, 90%, 60%, 1);
+
 	--text: #4c4f69;
 	--subtext1: #5c5f77;
 	--subtext0: #6c6f85;
@@ -12,9 +20,9 @@
 	--mantle: #e6e9ef;
 	--crust: #dce0e8;
 
-	--selection-color: cyan;
+	--selection-color: var(--cyan);
 
 	@media (prefers-color-scheme: dark) {
-		--selection-color: pink;
+		--selection-color: var(--pink);
 	}
 }

@@ -16,15 +16,13 @@ const { href, external = false, muted = false } = Astro.props
 	a {
 		transition: color 250ms ease-in-out;
 
-		color: blue;
-
 		&.muted {
 			color: var(--subtext0);
 		}
 
 		&:hover,
 		&:focus {
-			color: cyan;
+			color: var(--cyan);
 		}
 
 		.external {
