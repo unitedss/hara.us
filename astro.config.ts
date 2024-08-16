@@ -8,12 +8,12 @@ import { SITE_BASE } from './src/const/url'
 // https://astro.build/config
 export default defineConfig({
 	prefetch: true,
-  site: SITE_BASE,
-  integrations: [sitemap()],
-  output: 'server',
-  adapter: vercel({
+	site: SITE_BASE,
+	integrations: [sitemap()],
+	output: 'server',
+	adapter: vercel({
 		webAnalytics: {
 			enabled: true,
 		},
-	})
+	}),
 })

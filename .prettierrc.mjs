@@ -3,27 +3,24 @@ export default {
 	printWidth: 100,
 	semi: false,
 	singleQuote: true,
-	quoteProps: "consistent",
+	quoteProps: 'consistent',
 	tabWidth: 2,
-	trailingComma: "es5",
+	trailingComma: 'es5',
 	useTabs: true,
-	endOfLine: "lf",
-	arrowParens: "always",
-	plugins: [
-		"prettier-plugin-astro",
-		"prettier-plugin-astro-organize-imports",
-	],
+	endOfLine: 'lf',
+	arrowParens: 'always',
+	plugins: ['prettier-plugin-astro', 'prettier-plugin-astro-organize-imports'],
 	overrides: [
 		{
-			files: ["*.json", "*.md", "*.toml", "*.yml"],
+			files: ['*.json', '*.md', '*.toml', '*.yml'],
 			options: {
 				useTabs: false,
 			},
 		},
 		{
-			files: "*.astro",
+			files: '*.astro',
 			options: {
-				parser: "astro",
+				parser: 'astro',
 			},
 		},
 	],
