@@ -2,4 +2,60 @@
 import Layout from '@/layouts/Layout.astro'
 ---
 
-<Layout> HARA.us </Layout>
+<Layout>
+	<div class="container">
+		<div
+			class="flexbox"
+			style="position: relative;max-height: calc(100% - 104px);max-width: 1024px;"
+		>
+			<div class="hero">
+				<h1>
+					<strong style="font-size: min(56px, 8vw);">HARA.us</strong>
+					<span>A modern, feature-rich biolinks and fast</span>
+				</h1>
+				<h2>Soon</h2>
+			</div>
+		</div>
+	</div>
+</Layout>
+<style lang="scss">
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.flexbox {
+		position: relative;
+		max-height: calc(100% - 104px);
+		max-width: 1024px;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	.hero {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+		align-items: center;
+	}
+	.hero > h1 {
+		margin-block-end: 0;
+		font-size: min(56px, 7vw);
+		font-weight: 800;
+		line-height: 1;
+		text-align: center;
+		text-wrap: balance;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		gap: 16px;
+	}
+	.hero > h2 {
+		text-align: center;
+		font-size: min(24px, 4vw);
+		font-weight: 400;
+		color: var(--neutral-300);
+	}
+</style>

@@ -1,12 +1,17 @@
 body {
 	font-family: 'Inter', system-ui, sans-serif;
 	font-size: 2rem;
-	color: var(--subtext1);
+	color: var(--neutral-100);
 	font-weight: 400;
-	line-height: 1.5;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-size-adjust: none;
+	text-rendering: optimizelegibility;
 }
 
 ::selection {
+	color: var(--neutral-100);
 	background-color: var(--selection-color);
 }
 
@@ -38,8 +43,6 @@ h4,
 h5 {
 	margin: 0;
 	padding-block: var(--space-xs) var(--space-xs);
-
-	color: var(--text);
 }
 
 h1 {

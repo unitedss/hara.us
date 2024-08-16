@@ -1,5 +1,5 @@
 :root {
-	--cyan: hsla(180, 90%, 60%, 1);
+	--cyan: hsla(208, 90%, 60%, 1);
 	--green: hsla(142, 90%, 60%, 1);
 	--orange: hsla(25, 90%, 60%, 1);
 	--pink: hsla(335, 90%, 60%, 1);
@@ -7,22 +7,20 @@
 	--red: hsla(0, 90%, 60%, 1);
 	--yellow: hsla(62, 90%, 60%, 1);
 
-	--text: #4c4f69;
-	--subtext1: #5c5f77;
-	--subtext0: #6c6f85;
-	--overlay2: #7c7f93;
-	--overlay1: #8c8fa1;
-	--overlay0: #9ca0b0;
-	--surface2: #acb0be;
-	--surface1: #bcc0cc;
-	--surface0: #ccd0da;
-	--base: #eff1f5;
-	--mantle: #e6e9ef;
-	--crust: #dce0e8;
+	--base: #000000;
+
+	--hue: 254;
+
+	--neutral-100: hsla(var(--hue), 12%, 100%, 1);
+	--neutral-200: hsla(var(--hue), 12%, 90%, 1);
+	--neutral-300: hsla(var(--hue), 12%, 72%, 1);
+	--neutral-400: hsla(var(--hue), 12%, 36%, 1);
+	--neutral-500: hsla(var(--hue), 12%, 18%, 1);
+	--neutral-600: hsla(var(--hue), 12%, 6%, 1);
+	--neutral-700: #475569;
+	--neutral-800: #334155;
+	--neutral-900: #0f172a;
+	--neutral-1000: #020617;
 
 	--selection-color: var(--cyan);
-
-	@media (prefers-color-scheme: dark) {
-		--selection-color: var(--pink);
-	}
 }
